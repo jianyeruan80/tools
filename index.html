@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Check server is starting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<style>
+body{background:#eee}
+.loading {
+    width: 60px;
+    height: 60px;
+    background-color: #3182B8;
+
+    margin: 100px auto;
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+    animation: rotateplane 1.2s infinite ease-in-out;
+}
+@-webkit-keyframes rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    } 50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    } 100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+#none {display: none;}
+.menusifu{
+position:absolute;right:5px;bottom:5px;font-weight:600;
+}
+H1{margin: 50px auto;}
+</style>
+<script src="serverIP.js"></script>
+</head>
+<body style="text-align:center">
+<H1>Check Server Is Starting</H1>
+<div class="loading"></div>
+<img id="none" onload="Check()">
+<div class="menusifu">Menusifu Inc. All Rights Reserved.</div>
+</body>
+<script>
+var img = document.getElementById("none");
+function load(){
+    img.src="http://"+IP+"/kpos/front/css/images/iconSet.png?"+new Date().getTime();
+}
+setInterval("load()",1000);
+function Check(){
+	window.location.href=EMENUURL;
+}
+</script>
+</html>

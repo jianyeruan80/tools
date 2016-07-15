@@ -1,0 +1,15 @@
+IP="192.168.1.28:22080";
+EMENUURL="http://192.168.1.28:22080/kpos/emenu/#/index?close=true";
+/*http://192.168.1.224:22080/kpos/emenu/#/index?css=purple&close=true
+http://192.168.1.224:22080/kpos/emenu/#/index?css=amber&close=true
+http://192.168.1.224:22080/kpos/emenu/#/index?css=black&close=true
+http://192.168.1.224:22080/kpos/emenu/#/index?css=brown&close=true
+http://192.168.1.224:22080/kpos/emenu/#/index?css=green&close=true
+http://192.168.1.224:22080/kpos/emenu/#/index?css=grey&close=true
+http://192.168.1.224:22080/kpos/emenu/#/index?css=indigo&close=true
+http://192.168.1.224:22080/kpos/emenu/#/index?css=lime&close=true
+http://192.168.1.224:22080/kpos/emenu/#/index?css=blue&close=true
+http://192.168.1.224:22080/kpos/emenu/#/index?css=teal&close=true
+http://192.168.1.224:22080/kpos/emenu/#/index?css=bluegrey&close=true
+http://192.168.1.224:22080/kpos/emenu/#/index?close=true
+*/
